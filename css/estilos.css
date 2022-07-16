@@ -55,8 +55,8 @@ p {
 }
 
 .banner .content_banner h2 {
-    font-size: 79px;
-    text-transform: capitalize;
+    font-size: 62px;
+    text-transform: initial;
     color: var(--color_amarillo);
 }
 
@@ -316,9 +316,7 @@ section#envios {
 }
 
 .contacto_telefono .contacto_llamada:active,
-.contacto_telefono .contacto_whatsapp:active,
-.contacto_telefono .contacto_copiar:active,
-.contacto_telefono .contacto_copiarDir:active {
+.contacto_telefono .contacto_whatsapp:actives {
     transform: scale(0.9);
     transition: 0.5s;
 }
@@ -612,10 +610,10 @@ section#abaut {
     justify-content: center;
 }
 
-.abaut_us .content_abaut_us .caja_abaut_us.img {
-    padding: 40px;
+.abaut_us .content_abaut_us .caja_abaut_us.img img {
+    margin: auto;
     display: flex;
-    background-image: url(../imagenes/g.jpg);
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -875,7 +873,6 @@ hr {
 
     .banner .content_banner h2 {
         font-size: 3em;
-        color: #FFF;
     }
 
     .title {
@@ -960,13 +957,6 @@ hr {
     .abaut_us .content_abaut_us .caja_abaut_us {
         padding: 20px;
     }
-
-    /* SECCION CONTACTO */
-    .contactForm {
-        padding: 35px 40px;
-        margin: auto;
-        max-width: 100%;
-    }
 }
 
 @media (max-width: 768px) {
@@ -1001,16 +991,13 @@ hr {
       box-shadow: -5px 0px 10px var(--text_grey_shadow);
     }
 
-
     .contacto_telefono {
         display: grid;
         grid-template-columns: 1fr;
     }
 
     .contacto_telefono .contacto_llamada,
-    .contacto_telefono .contacto_whatsapp,
-    .contacto_telefono .contacto_copiar,
-    .contacto_telefono .contacto_copiarDir {
+    .contacto_telefono .contacto_whatsapp {
         margin: 0 0 10px 0;
     }
 
@@ -1068,20 +1055,6 @@ hr {
     .abaut_us .content_abaut_us .caja_abaut_us .textST li,
     .abaut_us .content_abaut_us .caja_abaut_us .textST p {
         font-size: 14px;
-    }
-
-    /* SECCION DE CONTACTO */
-    .content_contacts {
-        grid-template-columns: 1fr;
-    }
-
-    .box_contact {
-        padding: 35px 40px;
-    }
-
-    .contactForm {
-        margin: auto;
-        max-width: 100%;
     }
 }
 
@@ -1168,9 +1141,7 @@ hr {
     }
 
     .contacto_telefono .contacto_llamada,
-    .contacto_telefono .contacto_whatsapp,
-    .contacto_telefono .contacto_copiar,
-    .contacto_telefono .contacto_copiarDir {
+    .contacto_telefono .contacto_whatsapp {
         font-size: 12px;
     }
 
@@ -1181,6 +1152,24 @@ hr {
     /* SECCION OFICINAS */
     section#oficinas {
         margin-bottom: -100px;
+    }
+
+    .linea_oficinas {
+        margin: 0;
+    }
+
+    .linea_oficinas:before {
+        display: none;
+    }
+
+    .linea_oficinas ul li:nth-child(odd):before,
+    .linea_oficinas ul li:nth-child(even):before {
+        display: none;
+    }
+
+    .linea_oficinas ul li:nth-child(odd),
+        .linea_oficinas ul li:nth-child(even) {
+        padding: 0px;
     }
 
     .linea_oficinas ul li .ofiName h4 {
@@ -1222,6 +1211,10 @@ hr {
         font-size: 60px;
     }
 
+    .abaut_us .content_abaut_us .caja_abaut_us.img {
+        padding: 0px;
+    }
+
     .abaut_us .content_abaut_us .caja_abaut_us .textST li,
     .abaut_us .content_abaut_us .caja_abaut_us .textST p {
         font-size: 16px;
@@ -1254,6 +1247,10 @@ hr {
     .detalles_oficina span.detalle {
         font-size: 12px;
     }
+
+    .abaut_us .content_abaut_us .caja_abaut_us.img {
+        padding: 0px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -1273,6 +1270,10 @@ hr {
     .abaut_us .content_abaut_us .caja_abaut_us .textST li,
     .abaut_us .content_abaut_us .caja_abaut_us .textST p {
         font-size: 14px;
+    }
+
+    .abaut_us .content_abaut_us .caja_abaut_us.img {
+        padding: 0px;
     }
 }
 
