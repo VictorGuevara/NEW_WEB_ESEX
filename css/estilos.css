@@ -18,6 +18,7 @@
     --color_whatsapp: rgba(0, 177, 6, 1);
     --color_copiar: rgba(185, 0, 45, 1);
     --color_copiarDir: rgba(230, 127, 0, 1);
+    --color_cian: rgba(0, 255, 255, 1);
 }
 
 * {
@@ -67,8 +68,7 @@ p {
     color: #FFF;
 }
 
-.btn_inicio,
-.btn_inicio_qs {
+.btn_inicio {
     font-size: 20px;
     font-weight: bold;
     color: #FFF;
@@ -76,6 +76,20 @@ p {
     display: inline-block;
     padding: 20px 50px;
     margin-top: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.btn_inicio_qs {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color_dark);
+    background: var(--color_cian);
+    display: inline-block;
+    padding: 20px 50px;
+    margin-top: 150px;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
@@ -615,7 +629,7 @@ section#abaut {
 .abaut_us .content_abaut_us .caja_abaut_us.img img {
     margin: auto;
     display: flex;
-    width: 100%;
+    width: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -953,11 +967,14 @@ hr {
     .abaut_us .content_abaut_us {
         grid-template-columns: repeat(auto-fill, 48%);
         grid-gap: 2%;
-        margin-bottom: 90px;
     }
 
     .abaut_us .content_abaut_us .caja_abaut_us {
         padding: 20px;
+    }
+
+    .btn_inicio_qs {
+        margin-top: 30px;
     }
 }
 
