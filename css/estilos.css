@@ -67,7 +67,8 @@ p {
     color: #FFF;
 }
 
-.btn_inicio {
+.btn_inicio,
+.btn_inicio_qs {
     font-size: 20px;
     font-weight: bold;
     color: #FFF;
@@ -81,6 +82,7 @@ p {
     transition: 0.5s;
 }
 
+.btn_inicio_qs:hover,
 .btn_inicio:hover {
     letter-spacing: 3px;
     background: var(--color_amarillo);
@@ -1222,6 +1224,11 @@ hr {
     .abaut_us .content_abaut_us .caja_abaut_us {
         padding: 20px 0;
     }
+
+    .btn_inicio_qs {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -1250,6 +1257,10 @@ hr {
     .abaut_us .content_abaut_us .caja_abaut_us.img {
         padding: 0px;
     }
+
+    .btn_inicio_qs {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -1273,6 +1284,11 @@ hr {
 
     .abaut_us .content_abaut_us .caja_abaut_us.img {
         padding: 0px;
+    }
+
+    .btn_inicio_qs {
+        font-size: 13px;
+        padding: 10px;
     }
 }
 
